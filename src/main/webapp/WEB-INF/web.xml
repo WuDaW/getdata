@@ -6,10 +6,18 @@
     <display-name>Archetype Created Web Application</display-name>
     
     <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.zk.jy.servlets.LoginServlet</servlet-class>
+    </servlet>
+    <servlet>
         <servlet-name>DanweiSearchServlet</servlet-name>
         <servlet-class>com.zk.jy.servlets.DanweiSearchServlet</servlet-class>
     </servlet>
     
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/login</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>DanweiSearchServlet</servlet-name>
         <url-pattern>/danwei</url-pattern>
